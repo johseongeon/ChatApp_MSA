@@ -21,7 +21,7 @@ FROM scratch
 
 COPY --from=builder /dist/main .
 
-EXPOSE 8082
+EXPOSE 8080
 
 ENV MONGO_URI=mongodb://host.docker.internal:27017
 
